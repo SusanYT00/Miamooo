@@ -1,0 +1,721 @@
+local ScreenGui = Instance.new("ScreenGui")
+
+local openmain = Instance.new("Frame")
+
+local open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+openmain.Name = "openmain"
+
+openmain.Parent = ScreenGui
+
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+
+openmain.Position = UDim2.new(0.00801973976, 0, 0.423832953, 0)
+
+openmain.Size = UDim2.new(0, 100, 0, 28)
+
+openmain.Active = true
+
+openmain.Draggable = true
+
+openmain.Name = "openmain"
+
+openmain.Parent = ScreenGui
+
+openmain.BackgroundColor3 = Color3.new(170, 0, 255)
+
+openmain.Position = UDim2.new(0.00801973976, 0, 0.423832953, 0)
+
+openmain.Size = UDim2.new(0, 100, 0, 28)
+
+openmain.Active = true
+
+openmain.Draggable = false
+
+open.Name = "open"
+
+open.Parent = openmain
+
+open.BackgroundColor3 = Color3.new(170, 0, 255)
+
+open.Size = UDim2.new(0, 100, 0, 28)
+
+open.Font = Enum.Font.GothamBold
+
+open.Text = "OPEN"
+
+open.TextColor3 = Color3.new(0, 0, 0)
+
+open.TextSize = 18
+
+open.TextWrapped = true
+
+open.MouseButton1Down:connect(function()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+
+Title = "All Hub",
+
+Text = "Follow SusanKing3 on RBLX", 
+
+Button1 = "Sure",
+
+Button2 = "No Thanks",
+
+Duration = 30 
+
+})
+
+wait(3)
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("All Hub", "Ocean")
+
+-- Tabs
+
+local Tab1 = Window:NewTab("Info")
+
+local Section1 = Tab1:NewSection("All Hub")
+
+Section1:NewLabel("Thanks For Selecting Us!")
+
+Section1:NewLabel("1. Check Every Main For The Script U Want.")
+
+Section1:NewLabel("2. Contact SusanKing3 On RBLX Or On Our YT")
+
+Section1:NewLabel("3. Credits To All The Owners Of the Scripts")
+
+local Tab2 = Window:NewTab("Main")
+
+local Section2 = Tab2:NewSection("All Hub")
+
+-- Buttons/Windows/Idk
+
+Section2:NewButton("Fly Gui", "Fly Gui", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/h5QDPy6s", true))();
+
+end)
+
+Section2:NewButton("Infinite Yield", "Infinite Yield", function()
+
+    defaultsettings = {
+
+	prefix = ';';	StayOpen = false;
+
+	keepIY = true;
+
+	logsEnabled = false;
+
+	jLogsEnabled = false;
+
+	aliases = {};
+
+	binds = {};
+
+	WayPoints = {};
+
+	PluginsTable = {};
+
+}
+
+defaults = game:GetService("HttpService"):JSONEncode(defaultsettings)
+
+writefile("IY_FE.iy",defaults)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+Section2:NewButton("Pet Simulator X", "Pet Simulator X", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/GhostHub-PetSimX.lua"))()
+
+end)
+
+Section2:NewButton("Prison Life Admin", "Prison Life Admin", function()
+
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+
+end)
+
+Section2:NewButton("Brookhaven Script", "Brookhaven Script", function()
+
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/testttbqwebg/adc0db730f5dfca0d8dbdb81f3b65391/raw/b0443888c4399af5a297cb1100a4749c65705711/qweqw", true))()
+
+end)
+
+Section2:NewButton("Blox Fruits", "Blox Fruits", function()
+
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+
+end)
+
+Section2:NewButton("Bed Wars", "Bed Wars", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/ELCkygpv", true))()
+
+end)
+
+Section2:NewButton("Keyboard Script", "Keyboard Script", function()
+
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+
+end)
+
+Section2:NewButton("Permanent Animation", "Permanent Animation", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+
+end)
+
+Section2:NewButton("Jump Button Script", "Jump Button Script", function()
+
+    loadstring(game:HttpGet('https://pastebin.com/raw/qhBY6frK'))();
+
+end)
+
+Section2:NewButton("Pet Simulator Fake Hatch", "Pet Simulator Fake Hatch", function()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/PetSimulatorXV2.lua",true))()
+
+end)
+
+Section2:NewButton("Aimlock (Dont Use On Dahood)", "Aimlock (Dont Use On Dahood)", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/JsbGYCYi", true))()
+
+end)
+
+Section2:NewButton("Kat op aimlock", "Kat op silent aim", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/vRK299EE", true))()
+
+end)
+
+Section2:NewButton("Arsenal Hitbox", "Arsenal Hitbox", function()
+
+    function getplrsname() for i,v in pairs(game:GetChildren()) do if v.ClassName == "Players" then return v.Name end end end local players = getplrsname() local plr = game[players].LocalPlayer coroutine.resume(coroutine.create(function() while wait(1) do coroutine.resume(coroutine.create(function() for _,v in pairs(game[players]:GetPlayers()) do if v.Name ~= plr.Name and v.Character then v.Character.RightUpperLeg.CanCollide = false v.Character.RightUpperLeg.Transparency = 75 v.Character.RightUpperLeg.Size = Vector3.new(21,21,21) v.Character.LeftUpperLeg.CanCollide = false v.Character.LeftUpperLeg.Transparency = 75 v.Character.LeftUpperLeg.Size = Vector3.new(21,21,21) v.Character.HeadHB.CanCollide = false v.Character.HeadHB.Transparency = 75 v.Character.HeadHB.Size = Vector3.new(21,21,21) v.Character.HumanoidRootPart.CanCollide = false v.Character.HumanoidRootPart.Transparency = 75 v.Character.HumanoidRootPart.Size = Vector3.new(21,21,21) end end end)) end end))
+
+end)
+
+Section2:NewButton("Free All HoverBoard Pet Sim x", "Free All HoverBoard Pet Sim x", function()
+
+    local tbl = require(game.ReplicatedStorage.Framework.Modules.Client["4 | Save"]).Get() tbl.Hoverboards = {} for i,v in pairs(game.ReplicatedStorage.Game.Hoverboards:GetChildren())do table.insert(tbl.Hoverboards, v.Name) end getsenv(game.Players.LocalPlayer.PlayerScripts.Scripts.GUIs.Hoverboards).Update() getsenv(game.Players.LocalPlayer.PlayerScripts.Scripts.GUIs.Hoverboards).Equip = function(board) tbl.EquippedHoverboard = board getsenv(game.Players.LocalPlayer.PlayerScripts.Scripts.GUIs.Hoverboards).Update() end
+
+end)
+
+Section2:NewKeybind("V To Toggle Gui", "V To Toggle", Enum.KeyCode.V, function()
+
+	Library:ToggleUI()
+
+end)
+
+local Tab3 = Window:NewTab("Main 2")
+
+local Section3 = Tab3:NewSection("All Hub")
+
+Section3:NewButton("B Genesis", "B Genesis", function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
+
+end)
+
+Section3:NewButton("Sussy Hub", "Sussy hub", function()
+
+    -- FE SussyHub Made by Nil <3
+
+-- Mizt Source by Melon <3
+
+loadstring(game:HttpGet(('https://gist.githubusercontent.com/Nilrogram/8b0c8bd710be142f383c71f79279752c/raw/e4fb01a7de7cd498bb53270d2ad191dfab268a88/FE%2520SussyHub'),true))();
+
+end)
+
+Section3:NewButton("Ragdoll Engine", "Ragdoll Engine", function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+
+end)
+
+Section3:NewButton("Mm2 Admin Panel", "Mm2 Admin Panel", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/ycMdyBvm", true))()
+
+end)
+
+Section3:NewButton("Esp", "Esp", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/kiGaLwqa", true))()
+
+end)
+
+Section3:NewButton("Perm Animation", "Perm Animation", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/Q8cVLfb0",true))()
+
+end)
+
+Section3:NewButton("Freeze Tool", "Freeze Tool", function()
+
+loadstring(game:HttpGet('https://pastebin.com/raw/AkJS0PC7'))()
+
+end)
+
+Section3:NewButton("FPS Booster", "FPS Booster", function()
+
+loadstring("\45\45\45\45\45\32\85\73\32\76\73\66\82\65\82\89\32\45\45\45\45\10\10\108\111\99\97\108\32\108\105\98\114\97\114\121\32\61\32\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\65\105\107\97\86\51\114\109\47\85\105\76\105\98\47\109\97\115\116\101\114\47\76\105\98\46\108\117\97\39\41\41\41\40\41\10\10\108\111\99\97\108\32\119\32\61\32\108\105\98\114\97\114\121\58\67\114\101\97\116\101\87\105\110\100\111\119\40\34\70\112\115\32\66\111\111\115\116\101\114\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\119\105\110\100\111\119\10\10\108\111\99\97\108\32\97\32\61\32\119\58\67\114\101\97\116\101\70\111\108\100\101\114\40\34\82\101\109\111\118\101\32\80\97\103\101\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\102\111\108\100\101\114\40\85\32\119\105\108\108\32\112\117\116\32\104\101\114\101\32\121\111\117\114\32\98\117\116\116\111\110\115\44\101\116\99\41\10\10\97\58\76\97\98\101\108\40\34\73\109\32\80\97\116\114\105\99\107\34\44\123\10\32\32\32\32\84\101\120\116\83\105\122\101\32\61\32\50\53\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\84\101\120\116\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\50\53\53\44\32\50\53\53\44\32\50\53\53\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\66\103\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\49\50\55\44\32\50\53\53\44\32\50\49\50\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\10\125\41\32\10\10\97\58\66\117\116\116\111\110\40\34\70\112\115\32\43\56\48\34\44\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\112\114\105\110\116\40\34\104\101\108\108\111\34\41\32\9\119\111\114\107\115\112\97\99\101\58\70\105\110\100\70\105\114\115\116\67\104\105\108\100\79\102\67\108\97\115\115\40\39\84\101\114\114\97\105\110\39\41\46\87\97\116\101\114\87\97\118\101\83\105\122\101\32\61\32\48\10\9\119\111\114\107\115\112\97\99\101\58\70\105\110\100\70\105\114\115\116\67\104\105\108\100\79\102\67\108\97\115\115\40\39\84\101\114\114\97\105\110\39\41\46\87\97\116\101\114\87\97\118\101\83\112\101\101\100\32\61\32\48\10\9\119\111\114\107\115\112\97\99\101\58\70\105\110\100\70\105\114\115\116\67\104\105\108\100\79\102\67\108\97\115\115\40\39\84\101\114\114\97\105\110\39\41\46\87\97\116\101\114\82\101\102\108\101\99\116\97\110\99\101\32\61\32\48\10\9\119\111\114\107\115\112\97\99\101\58\70\105\110\100\70\105\114\115\116\67\104\105\108\100\79\102\67\108\97\115\115\40\39\84\101\114\114\97\105\110\39\41\46\87\97\116\101\114\84\114\97\110\115\112\97\114\101\110\99\121\32\61\32\48\10\9\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\76\105\103\104\116\105\110\103\34\41\46\71\108\111\98\97\108\83\104\97\100\111\119\115\32\61\32\102\97\108\115\101\10\9\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\76\105\103\104\116\105\110\103\34\41\46\70\111\103\69\110\100\32\61\32\57\101\57\10\9\115\101\116\116\105\110\103\115\40\41\46\82\101\110\100\101\114\105\110\103\46\81\117\97\108\105\116\121\76\101\118\101\108\32\61\32\49\10\9\102\111\114\32\105\44\118\32\105\110\32\112\97\105\114\115\40\103\97\109\101\58\71\101\116\68\101\115\99\101\110\100\97\110\116\115\40\41\41\32\100\111\10\9\9\105\102\32\118\58\73\115\65\40\34\80\97\114\116\34\41\32\111\114\32\118\58\73\115\65\40\34\85\110\105\111\110\79\112\101\114\97\116\105\111\110\34\41\32\111\114\32\118\58\73\115\65\40\34\77\101\115\104\80\97\114\116\34\41\32\111\114\32\118\58\73\115\65\40\34\67\111\114\110\101\114\87\101\100\103\101\80\97\114\116\34\41\32\111\114\32\118\58\73\115\65\40\34\84\114\117\115\115\80\97\114\116\34\41\32\116\104\101\110\10\9\9\9\118\46\77\97\116\101\114\105\97\108\32\61\32\34\80\108\97\115\116\105\99\34\10\9\9\9\118\46\82\101\102\108\101\99\116\97\110\99\101\32\61\32\48\10\9\9\101\108\115\101\105\102\32\118\58\73\115\65\40\34\68\101\99\97\108\34\41\32\116\104\101\110\10\9\9\9\118\46\84\114\97\110\115\112\97\114\101\110\99\121\32\61\32\49\10\9\9\101\108\115\101\105\102\32\118\58\73\115\65\40\34\80\97\114\116\105\99\108\101\69\109\105\116\116\101\114\34\41\32\111\114\32\118\58\73\115\65\40\34\84\114\97\105\108\34\41\32\116\104\101\110\10\9\9\9\118\46\76\105\102\101\116\105\109\101\32\61\32\78\117\109\98\101\114\82\97\110\103\101\46\110\101\119\40\48\41\10\9\9\101\108\115\101\105\102\32\118\58\73\115\65\40\34\69\120\112\108\111\115\105\111\110\34\41\32\116\104\101\110\10\9\9\9\118\46\66\108\97\115\116\80\114\101\115\115\117\114\101\32\61\32\49\10\9\9\9\118\46\66\108\97\115\116\82\97\100\105\117\115\32\61\32\49\10\9\9\101\110\100\10\9\101\110\100\10\9\102\111\114\32\105\44\118\32\105\110\32\112\97\105\114\115\40\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\76\105\103\104\116\105\110\103\34\41\58\71\101\116\68\101\115\99\101\110\100\97\110\116\115\40\41\41\32\100\111\10\9\9\105\102\32\118\58\73\115\65\40\34\66\108\117\114\69\102\102\101\99\116\34\41\32\111\114\32\118\58\73\115\65\40\34\83\117\110\82\97\121\115\69\102\102\101\99\116\34\41\32\111\114\32\118\58\73\115\65\40\34\67\111\108\111\114\67\111\114\114\101\99\116\105\111\110\69\102\102\101\99\116\34\41\32\111\114\32\118\58\73\115\65\40\34\66\108\111\111\109\69\102\102\101\99\116\34\41\32\111\114\32\118\58\73\115\65\40\34\68\101\112\116\104\79\102\70\105\101\108\100\69\102\102\101\99\116\34\41\32\116\104\101\110\10\9\9\9\118\46\69\110\97\98\108\101\100\32\61\32\102\97\108\115\101\10\9\9\101\110\100\10\9\101\110\100\10\9\119\111\114\107\115\112\97\99\101\46\68\101\115\99\101\110\100\97\110\116\65\100\100\101\100\58\67\111\110\110\101\99\116\40\102\117\110\99\116\105\111\110\40\99\104\105\108\100\41\10\9\9\99\111\114\111\117\116\105\110\101\46\119\114\97\112\40\102\117\110\99\116\105\111\110\40\41\10\9\9\9\105\102\32\99\104\105\108\100\58\73\115\65\40\39\70\111\114\99\101\70\105\101\108\100\39\41\32\116\104\101\110\10\9\9\9\9\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\39\82\117\110\83\101\114\118\105\99\101\39\41\46\72\101\97\114\116\98\101\97\116\58\87\97\105\116\40\41\10\9\9\9\9\99\104\105\108\100\58\68\101\115\116\114\111\121\40\41\10\9\9\9\101\108\115\101\105\102\32\99\104\105\108\100\58\73\115\65\40\39\83\112\97\114\107\108\101\115\39\41\32\116\104\101\110\10\9\9\9\9\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\39\82\117\110\83\101\114\118\105\99\101\39\41\46\72\101\97\114\116\98\101\97\116\58\87\97\105\116\40\41\10\9\9\9\9\99\104\105\108\100\58\68\101\115\116\114\111\121\40\41\10\9\9\9\101\108\115\101\105\102\32\99\104\105\108\100\58\73\115\65\40\39\83\109\111\107\101\39\41\32\111\114\32\99\104\105\108\100\58\73\115\65\40\39\70\105\114\101\39\41\32\116\104\101\110\10\9\9\9\9\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\39\82\117\110\83\101\114\118\105\99\101\39\41\46\72\101\97\114\116\98\101\97\116\58\87\97\105\116\40\41\10\9\9\9\9\99\104\105\108\100\58\68\101\115\116\114\111\121\40\41\10\9\9\9\101\110\100\10\9\9\101\110\100\41\40\41\10\9\101\110\100\41\10\101\110\100\41\10\10\97\58\66\117\116\116\111\110\40\34\82\101\109\111\118\101\70\111\103\34\44\102\117\110\99\116\105\111\110\40\41\10\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\76\105\103\104\116\105\110\103\34\41\46\70\111\103\69\110\100\32\61\32\49\48\48\48\48\48\10\9\102\111\114\32\105\44\118\32\105\110\32\112\97\105\114\115\40\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\76\105\103\104\116\105\110\103\34\41\58\71\101\116\68\101\115\99\101\110\100\97\110\116\115\40\41\41\32\100\111\10\9\9\105\102\32\118\58\73\115\65\40\34\65\116\109\111\115\112\104\101\114\101\34\41\32\116\104\101\110\10\9\9\9\118\58\68\101\115\116\114\111\121\40\41\10\9\9\101\110\100\10\9\101\110\100\10\101\110\100\41\10\10\108\111\99\97\108\32\98\32\61\32\119\58\67\114\101\97\116\101\70\111\108\100\101\114\40\34\112\97\103\101\50\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\102\111\108\100\101\114\40\85\32\119\105\108\108\32\112\117\116\32\104\101\114\101\32\121\111\117\114\32\98\117\116\116\111\110\115\44\101\116\99\41\10\10\98\58\66\117\116\116\111\110\40\34\98\117\98\98\108\101\99\104\97\116\34\44\102\117\110\99\116\105\111\110\40\41\10\9\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\67\104\97\116\34\41\46\66\117\98\98\108\101\67\104\97\116\69\110\97\98\108\101\100\32\61\32\116\114\117\101\10\101\110\100\41\10\10\98\58\66\117\116\116\111\110\40\34\83\101\114\118\101\114\104\111\112\34\44\102\117\110\99\116\105\111\110\40\41\10\108\111\99\97\108\32\115\101\114\118\101\114\115\32\61\32\110\105\108\10\32\32\32\32\112\99\97\108\108\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\32\32\32\32\115\101\114\118\101\114\115\32\61\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\72\116\116\112\83\101\114\118\105\99\101\34\41\58\74\83\79\78\68\101\99\111\100\101\40\103\97\109\101\58\72\116\116\112\71\101\116\65\115\121\110\99\40\34\104\116\116\112\115\58\47\47\103\97\109\101\115\46\114\111\98\108\111\120\46\99\111\109\47\118\49\47\103\97\109\101\115\47\34\32\46\46\32\103\97\109\101\46\80\108\97\99\101\73\100\32\46\46\32\34\47\115\101\114\118\101\114\115\47\80\117\98\108\105\99\63\115\111\114\116\79\114\100\101\114\61\65\115\99\38\108\105\109\105\116\61\49\48\48\34\41\41\46\100\97\116\97\10\32\32\32\32\101\110\100\41\10\32\32\32\32\105\102\32\116\121\112\101\40\115\101\114\118\101\114\115\41\32\126\61\32\34\116\97\98\108\101\34\32\116\104\101\110\10\32\32\32\32\101\110\100\10\32\32\32\32\108\111\99\97\108\32\106\111\98\73\100\115\32\61\32\123\125\10\32\32\32\32\102\111\114\32\105\44\32\118\32\105\110\32\112\97\105\114\115\40\115\101\114\118\101\114\115\41\32\100\111\10\32\32\32\32\9\105\102\32\116\121\112\101\40\118\41\32\61\61\32\34\116\97\98\108\101\34\32\97\110\100\32\118\46\109\97\120\80\108\97\121\101\114\115\32\62\32\118\46\112\108\97\121\105\110\103\32\97\110\100\32\118\46\105\100\32\126\61\32\103\97\109\101\46\74\111\98\73\100\32\116\104\101\110\10\32\32\32\32\9\9\116\97\98\108\101\46\105\110\115\101\114\116\40\106\111\98\73\100\115\44\32\118\46\105\100\41\10\32\32\32\32\9\101\110\100\10\32\32\32\32\101\110\100\10\32\32\32\32\105\102\32\35\106\111\98\73\100\115\32\62\32\48\32\116\104\101\110\10\32\32\32\32\9\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\84\101\108\101\112\111\114\116\83\101\114\118\105\99\101\34\41\58\84\101\108\101\112\111\114\116\84\111\80\108\97\99\101\73\110\115\116\97\110\99\101\40\103\97\109\101\46\80\108\97\99\101\73\100\44\32\106\111\98\73\100\115\91\109\97\116\104\46\114\97\110\100\111\109\40\49\44\32\35\106\111\98\73\100\115\41\93\41\10\32\32\32\32\101\110\100\10\101\110\100\41\10\10\98\58\66\117\116\116\111\110\40\34\70\51\120\34\44\102\117\110\99\116\105\111\110\40\41\10\9\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\71\101\116\79\98\106\101\99\116\115\40\34\114\98\120\97\115\115\101\116\105\100\58\47\47\54\54\57\53\54\52\52\50\57\57\34\41\91\49\93\46\83\111\117\114\99\101\41\40\41\10\101\110\100\41\10\10\98\58\66\117\116\116\111\110\40\34\70\114\101\101\32\71\97\109\101\112\97\115\115\34\44\102\117\110\99\116\105\111\110\40\41\10\105\102\32\103\97\109\101\46\67\114\101\97\116\111\114\84\121\112\101\32\61\61\32\69\110\117\109\46\67\114\101\97\116\111\114\84\121\112\101\46\85\115\101\114\32\116\104\101\110\32\103\97\109\101\46\80\108\97\121\101\114\115\46\76\111\99\97\108\80\108\97\121\101\114\46\85\115\101\114\73\100\32\61\32\103\97\109\101\46\67\114\101\97\116\111\114\73\100\32\101\110\100\32\105\102\32\103\97\109\101\46\67\114\101\97\116\111\114\84\121\112\101\32\61\61\32\69\110\117\109\46\67\114\101\97\116\111\114\84\121\112\101\46\71\114\111\117\112\32\116\104\101\110\32\103\97\109\101\46\80\108\97\121\101\114\115\46\76\111\99\97\108\80\108\97\121\101\114\46\85\115\101\114\73\100\32\61\32\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\71\114\111\117\112\83\101\114\118\105\99\101\34\41\58\71\101\116\71\114\111\117\112\73\110\102\111\65\115\121\110\99\40\103\97\109\101\46\67\114\101\97\116\111\114\73\100\41\46\79\119\110\101\114\46\73\100\32\101\110\100\10\101\110\100\41\32\10\10\97\58\68\101\115\116\114\111\121\71\117\105\40\41\32\45\45\32\68\111\110\116\32\82\101\109\111\118\101\32\84\104\105\115\32\70\111\114\32\68\101\115\116\114\111\121\32\84\104\101\32\71\85\73\10\10\45\45\45\32\67\111\109\105\110\103\32\83\111\111\110\32\45\45\45\10\10")()
+
+end)
+
+Section3:NewButton("RTX Summer", "RTX Summer", function()
+
+getgenv().mode = "Summer" -- Choose from Summer and Autumn
+
+local a = game.Lighting
+
+a.Ambient = Color3.fromRGB(33, 33, 33)
+
+a.Brightness = 6.67
+
+a.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+
+a.ColorShift_Top = Color3.fromRGB(255, 247, 237)
+
+a.EnvironmentDiffuseScale = 0.105
+
+a.EnvironmentSpecularScale = 0.522
+
+a.GlobalShadows = true
+
+a.OutdoorAmbient = Color3.fromRGB(51, 54, 67)
+
+a.ShadowSoftness = 0.04
+
+a.GeographicLatitude = -15.525
+
+a.ExposureCompensation = 0.75
+
+local b = Instance.new("BloomEffect", a)
+
+b.Enabled = true
+
+b.Intensity = 0.04
+
+b.Size = 1900
+
+b.Threshold = 0.915
+
+local c = Instance.new("ColorCorrectionEffect", a)
+
+c.Brightness = 0.176
+
+c.Contrast = 0.39
+
+c.Enabled = true
+
+c.Saturation = 0.2
+
+c.TintColor = Color3.fromRGB(217, 145, 57)
+
+if getgenv().mode == "Summer" then
+
+   c.TintColor = Color3.fromRGB(255, 220, 148)
+
+elseif getgenv().mode == "Autumn" then
+
+   c.TintColor = Color3.fromRGB(217, 145, 57)
+
+else
+
+   warn("No mode selected!")
+
+   print("Please select a mode")
+
+   b:Destroy()
+
+   c:Destroy()
+
+end
+
+local d = Instance.new("DepthOfFieldEffect", a)
+
+d.Enabled = true
+
+d.FarIntensity = 0.077
+
+d.FocusDistance = 21.54
+
+d.InFocusRadius = 20.77
+
+d.NearIntensity = 0.277
+
+local e = Instance.new("ColorCorrectionEffect", a)
+
+e.Brightness = 0
+
+e.Contrast = -0.07
+
+e.Saturation = 0
+
+e.Enabled = true
+
+e.TintColor = Color3.fromRGB(255, 247, 239)
+
+local e2 = Instance.new("ColorCorrectionEffect", a)
+
+e2.Brightness = 0.2
+
+e2.Contrast = 0.45
+
+e2.Saturation = -0.1
+
+e2.Enabled = true
+
+e2.TintColor = Color3.fromRGB(255, 255, 255)
+
+local s = Instance.new("SunRaysEffect", a)
+
+s.Enabled = true
+
+s.Intensity = 0.01
+
+s.Spread = 0.146
+
+print("RTX Graphics loaded! Created by Miamo")
+
+end)
+
+Section3:NewButton("RTX Autumn", "RTX Autumn", function()
+
+getgenv().mode = "Autumn" -- Choose from Summer and Autumn
+
+local a = game.Lighting
+
+a.Ambient = Color3.fromRGB(33, 33, 33)
+
+a.Brightness = 6.67
+
+a.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+
+a.ColorShift_Top = Color3.fromRGB(255, 247, 237)
+
+a.EnvironmentDiffuseScale = 0.105
+
+a.EnvironmentSpecularScale = 0.522
+
+a.GlobalShadows = true
+
+a.OutdoorAmbient = Color3.fromRGB(51, 54, 67)
+
+a.ShadowSoftness = 0.04
+
+a.GeographicLatitude = -15.525
+
+a.ExposureCompensation = 0.75
+
+local b = Instance.new("BloomEffect", a)
+
+b.Enabled = true
+
+b.Intensity = 0.04
+
+b.Size = 1900
+
+b.Threshold = 0.915
+
+local c = Instance.new("ColorCorrectionEffect", a)
+
+c.Brightness = 0.176
+
+c.Contrast = 0.39
+
+c.Enabled = true
+
+c.Saturation = 0.2
+
+c.TintColor = Color3.fromRGB(217, 145, 57)
+
+if getgenv().mode == "Summer" then
+
+   c.TintColor = Color3.fromRGB(255, 220, 148)
+
+elseif getgenv().mode == "Autumn" then
+
+   c.TintColor = Color3.fromRGB(217, 145, 57)
+
+else
+
+   warn("No mode selected!")
+
+   print("Please select a mode")
+
+   b:Destroy()
+
+   c:Destroy()
+
+end
+
+local d = Instance.new("DepthOfFieldEffect", a)
+
+d.Enabled = true
+
+d.FarIntensity = 0.077
+
+d.FocusDistance = 21.54
+
+d.InFocusRadius = 20.77
+
+d.NearIntensity = 0.277
+
+local e = Instance.new("ColorCorrectionEffect", a)
+
+e.Brightness = 0
+
+e.Contrast = -0.07
+
+e.Saturation = 0
+
+e.Enabled = true
+
+e.TintColor = Color3.fromRGB(255, 247, 239)
+
+local e2 = Instance.new("ColorCorrectionEffect", a)
+
+e2.Brightness = 0.2
+
+e2.Contrast = 0.45
+
+e2.Saturation = -0.1
+
+e2.Enabled = true
+
+e2.TintColor = Color3.fromRGB(255, 255, 255)
+
+local s = Instance.new("SunRaysEffect", a)
+
+s.Enabled = true
+
+s.Intensity = 0.01
+
+s.Spread = 0.146
+
+print("RTX Graphics loaded! Created by Miamo")
+
+end)
+
+Section3:NewButton("Netless", "Netless", function()
+
+local NetEnabled = true -- Keep this on true or this script is basically useless
+
+--|| Script Loadstring:
+
+loadstring(game:HttpGet('https://paste.ee/r/HRAcR'))()  
+
+end)
+
+Section3:NewButton("Replication UI", "Replication UI", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/rM0LU2mJ", true))()
+
+end)
+
+Section3:NewButton("Free Gamepass Gui", "Free Gamepass Gui", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/fgWxAMiu", true))()
+
+end)
+
+Section3:NewButton("Arceus x Fe Chat Hax", "Arceus x Fe Chat Hax", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/HACKER21078/Security-Hacker-Chat-Hax-V2/main/Security%20Hacker%20Chat%20Hax%20V2'))()
+
+end)
+
+Section3:NewButton("Avatar Changer", "Avatar Changer", function()
+
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\73\110\118\111\111\107\101\114\49\49\47\79\117\116\102\105\116\47\109\97\105\110\47\79\117\116\102\105\116\67\111\112\105\101\114\46\108\117\97\34\44\32\116\114\117\101\41\41\40\41\10")()
+
+end)
+
+Section3:NewButton("Fe Ultimate Fling", "Fe Ultimate Fling", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/jiKfQ3wK", true))()
+
+end)
+
+Section3:NewButton("Fe Resize Gui", "Fe Resize Gui", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/vgz5yrhx", true))()
+
+end)
+
+Section3:NewButton("Zamasu FE", "Zamasu FE", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/nVtsAfM4", true))()
+
+end)
+
+Section3:NewButton("Starving Artist Copy", "Starving Arstist Copy", function()
+
+Settings = {
+
+    Timer = false
+
+}
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/anisnouacer1/My-Roblox-Scripts/main/Starving%20Artists.lua')))()
+
+end)
+
+Section3:NewLabel("Crash Server Need Layered Clothing And R15")
+
+Section3:NewButton("Crash Server", "Crash Server", function()
+
+for _,s in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+
+    if s:IsA("Motor6D") and s.Name ~= "Neck" then
+
+        local fard = s.Parent
+
+        s:Destroy()
+
+        fard.CFrame = CFrame.new(9e9 * _,9e9* _,9e9*_)
+
+        wait()
+
+    end
+
+end
+
+end)
+
+Section3:NewLabel("Crash Server Need Layered Clothing And R15")
+
+Section3:NewButton("Clicker Simulator", "Clicker Simulator", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
+
+end)
+
+Section3:NewButton("Amongus FE", "Amongus FE", function()
+
+loadstring(gane:HttpGet("https://pastebin.com/raw/3xr2ijrs", true))()
+
+end)
+
+local Tab4 = Window:NewTab("Main 3")
+
+local Section4 = Tab4:NewSection("All Hub")
+
+Section4:NewButton("Hat Giver", "Hat Giver", function()
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/dAy5u2hX'),true))()
+
+end)
+
+Section4:NewButton("Survive The Killer", "Survive The Killer", function()
+
+local games = { ["SurviveTheKiller"] = 4580204640 } for i,v in pairs(games) do if game.PlaceId == v then print("Supported!"); loadstring(game:HttpGet("https://raw.githubusercontent.com/MiloHaxx/ChairWare/main/Games/" .. i .. ".lua"))() end end loadstring(game:HttpGet("https://raw.githubusercontent.com/MiloHaxx/ChairWare/main/dcJoin.lua"))()
+
+end)
+
+Section4:NewButton("Steal All Item", "Steal All Item", function()
+
+for i,v in pairs (game.Players:GetChildren()) do
+
+wait()
+
+for i,b in pairs (v.Backpack:GetChildren()) do
+
+b.Parent = game.Players.LocalPlayer.Backpack
+
+end
+
+end
+
+end)
+
+Section4:NewButton("Bedwars JN HH Gaming", "Bedwars JN HH Gaming", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/BGKCidWh",true))()
+
+end)
+
+Section4:NewButton("VR Hands", "VR Hands", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/ATZ0i8g7", true))()
+
+end)
+
+Section4:NewButton("Jail All", "Jail All", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/fuhQDtZb"))()
+
+end)
+
+Section4:NewButton("Blox Fruits 2", "Blox Fruits 2", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ArceusXHub/AV2022/main/README.md", true))()
+
+end)
+
+Section4:NewButton("Annoy People Script", "Annoy People Script", function()
+
+--Made By YeahDudeThatsNarly#3552
+
+loadstring(game:HttpGet("https://pastebin.com/raw/1cHdCvTF"))()
+
+end)
+
+local Tab0 = Window:NewTab("Player")
+
+local Section0 = Tab0:NewSection("All Hub")
+
+Section0:NewLabel("Reset WalkSpeed = Set To 17 Or Reset")
+
+Section0:NewTextBox("WalkSpeed", "WalkSpeed", function(txt)
+
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (txt)
+
+end)
+
+Section0:NewLabel("Reset JumpPower = Set To 50 Or Reset")
+
+Section0:NewTextBox("JumpPower", "JumpPower", function(txt)
+
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = (txt)
+
+end)
+
+Section0:NewLabel("Reset Fov = Set To 75/70")
+
+Section0:NewTextBox("Fov", "Fov", function(txt)
+
+	Workspace.CurrentCamera.FieldOfView = (txt)
+
+end)
+
+local Tab999 = Window:NewTab("Credits")
+
+local Section999 = Tab999:NewSection("All Hub")
+
+Section999:NewButton("Credits", "Credits", function()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+
+Title = "All Hub Credits",
+
+Text = "Made by SusanKing3 on RBLX", 
+
+Duration = 15
+
+})
+
+end)
+
+end)
