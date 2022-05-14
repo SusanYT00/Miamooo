@@ -55,6 +55,7 @@ open.TextSize = 18
 open.TextWrapped = true
 
 open.MouseButton1Down:connect(function()
+openmain.Visible = false
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 
