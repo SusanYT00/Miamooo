@@ -703,7 +703,84 @@ loadstring("\108\111\99\97\108\32\76\80\32\61\32\103\97\109\101\58\71\101\116\83
 end)
 
 Section5:NewButton("My Own Exec", "My Own Exec", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/G5f5KjS9'))()
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local FeHub  = Instance.new("ScreenGui")
+local FeHub2 = Instance.new("Frame")
+local Insert = Instance.new ("TextBox")
+local Execute = Instance.new ("TextButton")
+local Exit = Instance.new ('TextButton')
+local Label = Instance.new ("TextLabel")
+
+FeHub.Name = "FeHub"
+FeHub.Parent = game.CoreGui
+FeHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+FeHub2.Name = "FeHub2"
+FeHub2.Parent = FeHub
+FeHub2.BackgroundColor3 = Color3.fromRGB(23, 22, 21)
+FeHub2.Position = UDim2.new(0.0809101239, 0, 0.203790441, 0)
+FeHub2.Size = UDim2.new(0, 600, 0, 396)
+FeHub2.Active = true
+FeHub2.Draggable = true
+
+Insert.Name = "Insert"
+Insert.Parent = FeHub2
+Insert.BackgroundColor3 = Color3.new(77, 77, 255)
+Insert.Size = UDim2.new(0, 500, 0, 239)
+Insert.Font = Enum.Font.SourceSans
+Insert.Text = "Please type a pastebin link only"
+Insert.TextColor3 = Color3.new(0, 0, 0)
+Insert.TextSize = 24
+Insert.TextWrapped = true
+Insert.TextXAlignment = Enum.TextXAlignment.Left
+Insert.TextYAlignment = Enum.TextYAlignment.Top
+
+Execute.Name = "Execute"
+Execute.Parent = FeHub2
+Execute.BackgroundColor3 = Color3.new(77, 77, 255)
+Execute.Position = UDim2.new(0.0000435627, 0, 0.834862411, 15)
+Execute.Size = UDim2.new(0, 146, 0, 50)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.new(0, 0, 0)
+Execute.TextSize = 30
+Execute.MouseButton1Click:connect(function()
+loadstring(Insert.Text)()
+end)
+Label.Name = "Label"
+Label.Parent = FeHub2
+Label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Label.Position = UDim2.new(0, 0, -0.266169071, 64)
+Label.Size = UDim2.new(0, 600, 0, 40)
+Label.Font = Enum.Font.SourceSans
+Label.Text = "Susan_YT"
+Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label.TextSize = 36.000
+Label.TextWrapped = true
+
+Exit.Name = "Exit"
+Exit.Parent = FeHub2
+Exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit.Position = UDim2.new(0, 450, -0.266169071, 64)
+Exit.Size = UDim2.new(0, 150, 0, 40)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+Exit.MouseButton1Down:Connect(function()
+FeHub2.Visible = false
+
+end)
+end)
+
+Section5:NewButton("Dunk Simulator", "Dunk Simulator", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Run6666/dunking-simulator/main/output-ATzo.lua"))()
 end)
 
 local Tab0 = Window:NewTab("Player")
