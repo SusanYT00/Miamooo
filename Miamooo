@@ -647,8 +647,7 @@ end)
 
 Section4:NewButton("Bedwars JN HH Gaming", "Bedwars JN HH Gaming", function()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/BGKCidWh",true))()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming123/JNHHGaming123/main/JN%20HH%20Gaming%20Bedwars%20V5",true))()
 end)
 
 Section4:NewButton("VR Hands", "VR Hands", function()
