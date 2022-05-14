@@ -672,6 +672,19 @@ loadstring(game:HttpGet("https://pastebin.com/raw/1cHdCvTF"))()
 
 end)
 
+Section4:NewButton("Untitled hood admin", "Untitled hood admin", function()
+--credits to the owner!!
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ver-creator/Untitled-Hood-Commands/main/.Lua'))()
+end)
+
+Section4:NewButton("Controller Script", "Controller Script", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/srtepuBM'))()
+end)
+
+Section4:NewButton("Da Hood Gui", "Da Hood Gui", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xMilesGames/Da-Hood/main/README.md"))()
+end)
+
 local Tab0 = Window:NewTab("Player")
 
 local Section0 = Tab0:NewSection("All Hub")
@@ -710,7 +723,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 Title = "All Hub Credits",
 
-Text = "Made by Shadow_YT on RBLX", 
+Text = "Made by Tzum On YT", 
 
 Duration = 15
 
