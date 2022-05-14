@@ -272,6 +272,8 @@ loadstring("\45\45\45\45\45\32\85\73\32\76\73\66\82\65\82\89\32\45\45\45\45\10\1
 
 end)
 
+Section3:NewLabel("Use Rtx Only Once Or Use Fps Booster to Remove")
+
 Section3:NewButton("RTX Summer", "RTX Summer", function()
 
 getgenv().mode = "Summer" -- Choose from Summer and Autumn
@@ -723,7 +725,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 Title = "All Hub Credits",
 
-Text = "Made by Tzum On YT", 
+Text = "Made by Shadow_YT On YT", 
 
 Duration = 15
 
