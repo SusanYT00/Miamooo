@@ -710,7 +710,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 Title = "All Hub Credits",
 
-Text = "Made by SusanKing3 on RBLX", 
+Text = "Made by Shadow_YT on RBLX", 
 
 Duration = 15
 
