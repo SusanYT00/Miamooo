@@ -956,6 +956,12 @@ Section5:NewButton("Softbed", "Softbed", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/ELCkygpv", true))()
 end)
 
+Section5:NewButton("VHub", "VHub", function()
+--If VHub doesn't Work On You, Please Let Me Know In Our Discord Server!
+--discord.gg/3NN5zTW7h2
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
+end)
+
 local Tab0 = Window:NewTab("Player")
 
 local Section0 = Tab0:NewSection("All Hub")
