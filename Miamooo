@@ -91,7 +91,7 @@ Section1:NewLabel("2. Contact SusanKing3 On RBLX Or On Our YT")
 
 Section1:NewLabel("3. Credits To All The Owners Of the Scripts")
 
-local Tab2 = Window:NewTab("Main")
+local Tab2 = Window:NewTab("Main 1")
 
 local Section2 = Tab2:NewSection("All Hub")
 
