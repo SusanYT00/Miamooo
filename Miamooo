@@ -783,6 +783,10 @@ Section5:NewButton("Dunk Simulator", "Dunk Simulator", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Run6666/dunking-simulator/main/output-ATzo.lua"))()
 end)
 
+Section5:NewButton("Keyboard By Warrior Roberr", "Keyboard By Warrior Roberr", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/8MMtm0N0'))()
+end)
+
 local Tab0 = Window:NewTab("Player")
 
 local Section0 = Tab0:NewSection("All Hub")
