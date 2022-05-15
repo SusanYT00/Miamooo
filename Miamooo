@@ -787,6 +787,22 @@ Section5:NewButton("Keyboard By Warrior Roberr", "Keyboard By Warrior Roberr", f
 loadstring(game:HttpGet('https://pastebin.com/raw/8MMtm0N0'))()
 end)
 
+Section5:NewButton("Auto Walk", "Auto Walk", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/QAZwWuHN'))();
+end)
+
+Section5:NewButton("Float Script", "Float Script", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/K9aw4neF'))()
+end)
+
+Section5:NewButton("Screen Setting", "Screen Setting", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Ekn7geJz'))()
+end)
+
+Section5:NewButton("Dupe Tools", "Dupe Tools", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Dupe%20Tools%20Main%20Script.md'))()
+end)
+
 local Tab0 = Window:NewTab("Player")
 
 local Section0 = Tab0:NewSection("All Hub")
