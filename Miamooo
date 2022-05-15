@@ -935,6 +935,19 @@ end)
 
 Section5:NewLabel("Backpack For Fling: Why Don't We (WDW)")
 
+Section5:NewButton("Fe Drift Car", "Fe Drift Car", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+end)
+
+Section5:NewButton("Raise a Floppa", "Raise a Floppa", function()
+_G.RedGUI = true
+_G.Theme = "Dark" -- Must disable or remove _G.RedGUI to use
+--Themes: Light, Dark, Mocha, Aqua and Jester
+_G.V3rmillion = true
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/raiseafloppa.lua"))()
+end)
+
 local Tab0 = Window:NewTab("Player")
 
 local Section0 = Tab0:NewSection("All Hub")
